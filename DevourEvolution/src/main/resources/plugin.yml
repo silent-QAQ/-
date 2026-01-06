@@ -1,0 +1,19 @@
+name: dvsmcard
+version: '1.0-SNAPSHOT'
+main: com.hcw.CardEnhancementPlugin
+authors: [HCW]
+description: 锑食卡牌 - 一个用于Paper 1.20.1+的卡牌强化插件
+depend: [Vault]
+softdepend: [PlayerPoints]
+api-version: '1.20'
+commands:
+  hcw:
+    description: Opens the card enhancement GUI
+    usage: /<command>
+  de:
+    description: Card enhancement commands
+    usage: /<command> <subcommand> [args]
+    subcommands:
+      kp:
+        description: Add card properties to item in hand
+        usage: /<command> kp <star_level> <quality> (3:优, 2:中, 1:差)
